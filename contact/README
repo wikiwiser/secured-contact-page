@@ -1,0 +1,13 @@
+To install the MessageBoard you have to run these queries:
+
+CREATE DATABASE 'teleweb_msg_board';
+CREATE TABLE IF NOT EXISTS `messages` (
+  `from` varchar(255) NOT NULL DEFAULT '',
+  `to` varchar(255) NOT NULL DEFAULT '',
+  `message` text NOT NULL,
+  `timestamp` int(16) NOT NULL DEFAULT '0',
+  `ip` varchar(16) NOT NULL DEFAULT '',
+  KEY `from` (`from`,`timestamp`),
+  KEY `ip` (`ip`,`timestamp`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
