@@ -1,0 +1,6 @@
+To configure the script:
+
+1. Edit index.php and replace username and password at the begining  of the file.
+2. Edit messageboard.class.php and replace values of MSG_BOARD_API_SERVER, MSG_BOARD_API_AUTH_USER, MSG_BOARD_API_AUTH_PASS and MSG_BOARD_API_SERVER_KEY with appropriate values (where the MSG_BOARD_API_SERVER_KEY should be a random generated string).
+3. Edit messageboardapi.class.php and replace values of MSG_BOARD_API_SERVER_KEY, MSG_BOARD_API_AUTH_USER and MSG_BOARD_API_AUTH_PASS with the ones from step 2.
+4. Enjoy!

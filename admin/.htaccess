@@ -1,0 +1,16 @@
+# MessageBoard
+#
+# .htaccess
+#
+# Copyright Oleg Karp, 2010
+
+# Use RewriteEngine to make URLs SEO-friendly
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/?$ /api.php [L]
+
+# Here we use some trick to send HTTP authorization to PHP (CGI workaround)
+RewriteRule ^([a-z]+)/?([a-z]*)$ /index.php?page=$1&action=$2 [E=HTTP_AUTH:%{HTTP:Authorization},L]
+
