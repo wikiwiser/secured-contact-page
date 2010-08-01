@@ -1,0 +1,100 @@
+/**
+ * MessageBoardAdmin Main CSS File
+ *
+ * Copyright Oleg Karp, 2010
+ */
+
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+form {
+  padding: 0px;
+  margin: 0px;
+}
+
+body > div {
+  background-color: #B9B586;
+  height: 100%;
+  min-height: 100%;
+  text-align: center;
+}
+
+div.floater {
+   float: left;
+   height: 5%;
+   position: relative;
+   width: 1px;
+}
+
+div.container {
+  border: #595633 1px dashed;
+  background-color: #C7C49C;
+  width: 90%;
+  height: 90%;
+  clear: left;
+  position: relative;
+  margin: 0 auto;
+  padding: 5px;
+  padding-top: 0px; 
+  overflow: auto;     
+}
+
+div.record {
+  border: #595633 1px solid;
+  background-color: #FFFFFF;
+  margin: 5px 0px 0px 0px;
+  padding: 0px;
+}
+
+div.record div.timestamp {
+  background-color: #B9B586;
+  text-align: left;
+  color: #FFFFFF;
+  float: left;
+  width: 50%;
+  padding: 5px; 
+}
+
+div.record div.ip {
+  background-color: #B9B586;
+  text-align: right;
+  color: #FFFFFF;
+  width: auto;
+  padding: 5px; 
+}
+
+div.record div.from, div.record div.to, div.record div.message {
+  text-align: left;
+}
+
+div.record div.from > div, div.record div.to > div, div.record div.message > div {
+  font-weight: bold;
+  width: 100px;
+  float: left;
+  text-align: right;
+  padding: 5px;
+}
+
+div.record div.from > div + div, div.record div.to > div + div, div.record div.message > div + div {
+  font-weight: normal;
+  float: none;
+  width: auto;
+  text-align: left;
+  padding: 5px;
+  border-bottom: #B9B586 1px dashed;
+}
+
+div.record div.message > div + div {
+  border-bottom: 0px;
+}
+
+div#starttime {
+  display: none;
+}
