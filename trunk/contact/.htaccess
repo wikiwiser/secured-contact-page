@@ -1,0 +1,13 @@
+# MessageBoard
+#
+# .htaccess
+#
+# Copyright Oleg Karp, 2010
+
+# Use RewriteEngine to make URLs SEO-friendly
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z]+)/?([a-z]*)$ /index.php?page=$1&action=$2 [L]
+

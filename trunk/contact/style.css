@@ -1,0 +1,138 @@
+/**
+ * MessageBoard Main CSS File
+ *
+ * Copyright Oleg Karp, 2010
+ */
+
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+form {
+  padding: 0px;
+  margin: 0px;
+}
+
+body > div {
+  background-color: #B9B586;
+  height: 100%;
+  min-height: 100%;
+  text-align: center;
+}
+
+div.floater {
+   float: left;
+   height: 50%;
+   margin-bottom: -165px;
+   position: relative;
+   width: 1px;
+}
+
+div.container {
+  border: #595633 1px dashed;
+  background-color: #C7C49C;
+  width: 500px;
+  height: 330px;
+  clear: left;
+  position: relative;
+  margin: 0 auto;      
+}
+
+div.container hr {
+  width: 200px;
+  color: #595633;
+  background-color: #595633;
+  height: 1px;
+  border: 0px;
+}
+
+div.header {
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+div.msg {
+  margin: 25px 5px 5px 5px;
+}
+
+div.msg_from, div.msg_to, div.msg_msg  {
+  float: left;
+  text-align: right;
+  width: 30%;
+  padding: 5px;
+  height: 20px;
+}
+
+div.msg_from + div, div.msg_to + div, div.msg_msg + div {   
+  padding: 5px;
+  text-align: left;
+  height: 20px;
+}
+
+div.msg_from label, div.msg_to label, div.msg_msg label {
+  height: 16px;
+  display: block;
+}
+
+div.msg_from + div input, div.msg_to + div select {
+  border: #595633 1px solid;
+  margin-left: 10px;
+  color: #595633;
+  font-weight: bold;
+  height: 16px;
+  width: 175px;
+  position: absolute;
+}
+
+div.msg_to + div select {
+  height: 22px;
+  width: 195px;
+  top: -2px;
+  left: -2px;
+  margin-left: 0px;
+}
+
+/* this is some trick for ie6/ie7 to make 'select' tag accept border style */
+div.msg_to + div div.select_container {
+  border: #595633 1px solid;
+  left: 10px;
+  position: relative;
+  width: 191px;
+  height: 18px;
+  overflow: hidden;
+}
+
+div.msg_msg + div textarea {
+  border: #595633 1px solid;
+  margin-left: 10px;
+  color: #595633;
+  font-weight: bold;
+  height: 100px;
+  width: 230px;
+  position: absolute;
+}
+
+div.msg_submit {
+  padding: 100px 5px 0px 5px;
+}
+
+div.msg_submit input {
+  border: #595633 1px solid;
+  width: 70px;
+  height: 25px;
+}
+
+div.error {
+  display: none;
+  background-color: #F3FF5E;
+  padding: 0px;
+  margin: 0px;
+}
