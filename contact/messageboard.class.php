@@ -64,7 +64,7 @@
     }
     
     //send a response to the client using JSON encode
-    private function response($resp) {
+    protected function response($resp) {
       echo json_encode($resp);
     }
     
@@ -92,7 +92,7 @@
       return decrypt($result, MSG_BOARD_API_SERVER_KEY, $iv);
     }
     
-    private function callMessageBoardAPI($params) {
+    protected function callMessageBoardAPI($params) {
       //submit a message via message board API
       $curl = curl_init();
 
