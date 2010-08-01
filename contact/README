@@ -11,3 +11,7 @@ CREATE TABLE IF NOT EXISTS `messages` (
   KEY `ip` (`ip`,`timestamp`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+To configure the script:
+
+1. Edit messageboard.class.php and replace values of MSG_BOARD_API_SERVER, MSG_BOARD_API_AUTH_USER, MSG_BOARD_API_AUTH_PASS and MSG_BOARD_API_SERVER_KEY with appropriate values (where the MSG_BOARD_API_SERVER_KEY should be a random generated string).
+2. Enjoy!
