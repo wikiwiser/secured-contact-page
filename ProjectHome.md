@@ -1,0 +1,1 @@
+This script was written as an exercise. It was done in my free time (from my current job which makes me extremely busy) - each day 1-2 hours during a week. So it took about one full day of work to create it.
